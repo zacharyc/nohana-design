@@ -1,0 +1,73 @@
+@accent-color: rgb(5,168,158);
+@headline-font: "Gill Sans", Verdana;
+@content-font: "Arno Pro", Georgia;
+
+body {
+	background: @accent-color;
+	margin:0;
+	padding:0;
+}
+
+#wrapper {
+	width:940px;
+	margin: 0 auto 0 auto;
+	background:@accent-color;
+}
+
+#header {
+	padding-top:0;
+	font-family: @headline-font;
+}
+
+#personalInfo {
+    display:inline-block;
+    font-size: .4em;
+    width:200px;
+}
+
+#zeros {
+    font-size:2em;
+    color:#fff;
+}
+
+#personalInfo h2 {
+    text-align:right;
+    margin-left:80px;
+    width:100px;
+}
+
+#nav {
+    display:inline-block;
+    background:@accent-color;
+    vertical-align:top;
+    font-size:0.8em;
+    padding-top:15px;
+    padding-left:15px;
+}
+
+#nav ul {
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+#nav li {
+    display:inline-block;
+    padding:5px;
+}
+
+#content {
+    font-size:.8em;
+    margin-left:200px;
+    font-family:@content-font;
+}
+
+#content h2 {
+    font-style:italic;
+    font-size:1em;
+    margin-bottom:0;
+}
+
+#content p {
+    margin-top:3px;
+}
