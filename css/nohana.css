@@ -1,3 +1,17 @@
+/* first for IE 4–8 */
+@font-face {
+  font-family: DINWeb-Light;
+  src: url("DINWeb-Light.eot");
+}
+/* then for WOFF-capable browsers */
+@font-face {
+  font-family: DINWeb-Light;
+  src: url("DINWeb-Light.woff") format("woff");
+}
+/* go on with normal style definitions */
+body {
+  font-family: DINWeb-Light, sans-serif;
+}
 body {
   background: #05a89e;
   margin: 0;
@@ -9,21 +23,29 @@ body {
   background: #05a89e;
 }
 #header {
+  /*    border:1px solid white;*/
+
+  position: fixed;
+  padding-right: 30px;
   padding-top: 0;
-  font-family: "Gill Sans", Verdana;
 }
 #personalInfo {
-  display: inline-block;
+  display: block;
   font-size: .4em;
   width: 200px;
+  text-align: right;
 }
 #zeros {
   font-size: 2em;
   color: #fff;
 }
+#personalInfo h1 {
+  font-size: 2.5em;
+}
 #personalInfo h2 {
   text-align: right;
-  margin-left: 80px;
+  margin-top: 0;
+  margin-left: auto;
   width: 100px;
 }
 #nav {
@@ -40,13 +62,13 @@ body {
   margin: 0;
 }
 #nav li {
-  display: inline-block;
+  /*    display:inline-block;*/
+
   padding: 5px;
 }
 #content {
   font-size: .8em;
-  margin-left: 200px;
-  font-family: "Arno Pro", Georgia;
+  margin-left: 300px;
 }
 #content h2 {
   font-style: italic;

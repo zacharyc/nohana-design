@@ -1,6 +1,22 @@
 @accent-color: rgb(5,168,158);
 @headline-font: "Gill Sans", Verdana;
-@content-font: "Arno Pro", Georgia;
+
+/* first for IE 4–8 */
+@font-face {
+  font-family: DINWeb-Light;
+  src: url("DINWeb-Light.eot");
+}
+
+/* then for WOFF-capable browsers */
+@font-face {
+  font-family: DINWeb-Light;
+  src: url("DINWeb-Light.woff") format("woff");
+}
+
+/* go on with normal style definitions */
+body { 
+  font-family: DINWeb-Light, sans-serif;
+}
 
 body {
 	background: @accent-color;
@@ -15,14 +31,17 @@ body {
 }
 
 #header {
+/*    border:1px solid white;*/
+    position:fixed;
+    padding-right:30px;
 	padding-top:0;
-	font-family: @headline-font;
 }
 
 #personalInfo {
-    display:inline-block;
+    display:block;
     font-size: .4em;
     width:200px;
+    text-align:right;
 }
 
 #zeros {
@@ -30,9 +49,14 @@ body {
     color:#fff;
 }
 
+#personalInfo h1 {
+    font-size:2.5em;
+}
+
 #personalInfo h2 {
     text-align:right;
-    margin-left:80px;
+    margin-top:0;
+    margin-left:auto;
     width:100px;
 }
 
@@ -52,14 +76,13 @@ body {
 }
 
 #nav li {
-    display:inline-block;
+/*    display:inline-block;*/
     padding:5px;
 }
 
 #content {
     font-size:.8em;
-    margin-left:200px;
-    font-family:@content-font;
+    margin-left:300px;
 }
 
 #content h2 {
