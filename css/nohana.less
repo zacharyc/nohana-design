@@ -19,15 +19,18 @@ body {
 }
 
 body {
-	background: @accent-color;
+    
 	margin:0;
 	padding:0;
+}
+
+body.greenBackground {
+    background: @accent-color;
 }
 
 #wrapper {
 	width:940px;
 	margin: 0 auto 0 auto;
-	background:@accent-color;
 }
 
 #header {
@@ -44,6 +47,11 @@ body {
 }
 
 #zeros {
+    font-size:2em;
+    color:@accent-color;
+}
+
+body.greenBackground #zeros {
     font-size:2em;
     color:#fff;
 }
@@ -63,7 +71,6 @@ body {
 
 #nav {
     display:inline-block;
-    background:@accent-color;
     vertical-align:top;
     font-size:0.8em;
     padding-top:15px;
@@ -88,6 +95,7 @@ body {
 }
 
 #content {
+    padding-top:150px;
     font-size:.8em;
     margin-left:300px;
 }
