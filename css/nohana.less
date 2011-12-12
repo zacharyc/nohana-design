@@ -84,8 +84,7 @@ body.greenBackground #zeros {
     margin:0;
 }
 
-#nav li {
-/*    display:inline-block;*/
+#nav>ul>li {
     padding:5px;
     border-bottom:1px solid black;
 }
@@ -99,6 +98,44 @@ body.greenBackground #zeros {
     color:#000;
     text-decoration:none;
 }
+
+.contact {
+    padding-top:15px;
+    padding-left:10px;
+    color:@accent-color;
+}
+
+.contact h1 {
+    font-size:1em;
+}
+
+.contact h2 {
+    font-size:.8em;
+    padding-top:0;
+    padding-bottom:0;
+    margin-top:2px;
+    margin-bottom:0;
+}
+
+ul.subnav {
+    border-bottom:1px solid black;
+    padding-bottom:5px;
+}
+
+li.nestedListItem {
+    border:0px;
+}
+
+ul.subnav li {
+    margin-left:20px;
+    padding-left:10px;
+    border:1px solid white;
+}
+
+ul.subnav li:before {
+    content: "_ "
+}
+
 #content {
     padding-top:150px;
     font-size:.8em;
@@ -111,12 +148,17 @@ body.greenBackground #zeros {
     vertical-align:top;
     padding-top:50px;
 }
+
 #content h1.contentMessage {
     font-size:5.5em;
-    color:#fff;
+    color:@accent-color;
     display:inline-block;
     width:400px;
     line-height:1.4em;
+}
+
+body.greenBackground #content h1.contentMessage {
+    color:#fff;
 }
 
 #content h2 {
@@ -127,4 +169,15 @@ body.greenBackground #zeros {
 
 #content p {
     margin-top:3px;
+}
+
+.productImage {
+    margin-right:15px;
+    margin-bottom:20px;
+}
+
+img.resumeHeader {
+    height:20px;
+    margin-bottom:0;
+    padding-bottom:0;
 }
