@@ -21,7 +21,7 @@ body.greenBackground {
 }
 #wrapper {
   width: 960px;
-  margin: 0 auto 0 auto;
+  margin: 0 auto 0 0;
 }
 #header {
   /*    border:1px solid white;*/
@@ -61,7 +61,7 @@ body.greenBackground #zeros {
   vertical-align: top;
   font-size: 0.8em;
   padding-top: 65px;
-  padding-left: 15px;
+  padding-left: 0;
 }
 #nav ul {
   list-style: none;
@@ -70,6 +70,7 @@ body.greenBackground #zeros {
 }
 #nav > ul > li {
   padding: 5px;
+  padding-left: 90px;
   border-bottom: 1px solid black;
 }
 #nav img {
@@ -79,6 +80,9 @@ body.greenBackground #zeros {
 #nav li a {
   color: #000;
   text-decoration: none;
+}
+#nav li.selected a {
+  color: #05a89e;
 }
 .contact {
   padding-top: 15px;
@@ -104,7 +108,7 @@ li.nestedListItem {
 }
 ul.subnav li {
   margin-left: 20px;
-  padding-left: 10px;
+  padding-left: 90px;
   border: 1px solid white;
 }
 ul.subnav li:before {
