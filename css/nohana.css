@@ -20,12 +20,12 @@ body.greenBackground {
   background: #05a89e;
 }
 #wrapper {
-  width: 960px;
-  margin: 0 auto 0 0;
+  width: 1100px;
+  margin: 40px auto 0 0;
+  /*	border-right:1px solid black;*/
+
 }
 #header {
-  /*    border:1px solid white;*/
-
   position: fixed;
   padding-right: 30px;
   padding-top: 0;
@@ -77,6 +77,10 @@ body.greenBackground #zeros {
   vertical-align: bottom;
   height: 20px;
 }
+#nav img.description {
+  width: 160px;
+  height: inherit;
+}
 #nav li a {
   color: #000;
   text-decoration: none;
@@ -84,9 +88,13 @@ body.greenBackground #zeros {
 #nav li.selected a {
   color: #05a89e;
 }
+#nav li.selected {
+  color: #05a89e;
+}
 .contact {
+  font-size: 1em;
   padding-top: 15px;
-  padding-left: 10px;
+  padding-left: 90px;
   color: #05a89e;
 }
 .contact h1 {
@@ -115,9 +123,9 @@ ul.subnav li:before {
   content: "_ ";
 }
 #content {
-  padding-top: 150px;
+  padding-top: 185px;
   font-size: .8em;
-  margin-left: 250px;
+  margin-left: 350px;
 }
 #content img#reaction {
   display: inline-block;
@@ -142,6 +150,9 @@ body.greenBackground #content h1.contentMessage {
 }
 #content p {
   margin-top: 3px;
+}
+#content img {
+  max-width: 600px;
 }
 .productImage {
   margin-right: 15px;

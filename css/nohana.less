@@ -19,7 +19,6 @@ body {
 }
 
 body {
-    
 	margin:0;
 	padding:0;
 }
@@ -29,12 +28,12 @@ body.greenBackground {
 }
 
 #wrapper {
-	width:960px;
-	margin: 0 auto 0 0;
+	width:1100px;
+	margin: 40px auto 0 0;
+/*	border-right:1px solid black;*/
 }
 
 #header {
-/*    border:1px solid white;*/
     position:fixed;
     padding-right:30px;
 	padding-top:0;
@@ -96,6 +95,11 @@ body.greenBackground #zeros {
     height:20px;
 }
 
+#nav img.description {
+	width:160px;
+	height:inherit;
+}
+
 #nav li a {
     color:#000;
     text-decoration:none;
@@ -105,9 +109,14 @@ body.greenBackground #zeros {
     color:@accent-color;
 }
 
+#nav li.selected {
+    color:@accent-color;
+}
+
 .contact {
+	font-size:1em;
     padding-top:15px;
-    padding-left:10px;
+    padding-left:90px;
     color:@accent-color;
 }
 
@@ -143,9 +152,9 @@ ul.subnav li:before {
 }
 
 #content {
-    padding-top:150px;
+    padding-top:185px;
     font-size:.8em;
-    margin-left:250px;
+    margin-left:350px;
 }
 
 #content img#reaction {
@@ -175,6 +184,10 @@ body.greenBackground #content h1.contentMessage {
 
 #content p {
     margin-top:3px;
+}
+
+#content img {
+	max-width:600px;
 }
 
 .productImage {
